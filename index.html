@@ -1,4 +1,4 @@
-<!DOCTYPE html><!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en">
 
@@ -15,199 +15,114 @@
 <style>
 
 *{
-
-margin:0;
-
-padding:0;
-
-box-sizing:border-box;
-
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 body{
-
-font-family:Poppins,sans-serif;
-
-background:linear-gradient(#fffaf5,#f8efe5,#f4e4d1);
-
-overflow-x:hidden;
-
-color:#5b3a29;
-
-text-align:center;
-
+  font-family:Poppins,sans-serif;
+  background:linear-gradient(#fffaf5,#f8efe5,#f4e4d1);
+  overflow-x:hidden;
+  color:#5b3a29;
+  text-align:center;
 }
 
 .leaf{
-
-position:fixed;
-
-top:-50px;
-
-font-size:30px;
-
-animation:fall linear infinite;
-
-opacity:.7;
-
+  position:fixed;
+  top:-50px;
+  font-size:30px;
+  animation:fall linear infinite;
+  opacity:.7;
 }
 
 @keyframes fall{
-
-0%{
-
-transform:translateY(-100px) rotate(0deg);
-
-}
-
-100%{
-
-transform:translateY(110vh) rotate(360deg);
-
-}
-
+  0%{ transform:translateY(-100px) rotate(0deg); }
+  100%{ transform:translateY(110vh) rotate(360deg); }
 }
 
 .container{
-
-max-width:900px;
-
-margin:auto;
-
-padding:70px 20px;
-
+  max-width:900px;
+  margin:auto;
+  padding:70px 20px;
 }
 
 .small{
-
-font-size:18px;
-
-letter-spacing:3px;
-
-text-transform:uppercase;
-
-color:#a5662d;
-
+  font-size:18px;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:#a5662d;
 }
 
 .title{
-
-font-family:'Great Vibes',cursive;
-
-font-size:70px;
-
-color:#8c4d24;
-
-margin:20px 0;
-
+  font-family:'Great Vibes',cursive;
+  font-size:70px;
+  color:#8c4d24;
+  margin:20px 0;
 }
 
 .heading{
-
-font-family:'Playfair Display',serif;
-
-font-size:48px;
-
-margin-bottom:20px;
-
+  font-family:'Playfair Display',serif;
+  font-size:48px;
+  margin-bottom:20px;
 }
 
 .subtitle{
-
-font-size:22px;
-
-line-height:1.8;
-
-max-width:700px;
-
-margin:auto;
-
+  font-size:22px;
+  line-height:1.8;
+  max-width:700px;
+  margin:auto;
 }
 
 .button{
-
-display:inline-block;
-
-margin-top:40px;
-
-padding:20px 40px;
-
-background:#c56b2b;
-
-color:white;
-
-font-size:22px;
-
-border-radius:60px;
-
-text-decoration:none;
-
-transition:.3s;
-
-box-shadow:0 15px 30px rgba(0,0,0,.2);
-
+  display:inline-block;
+  margin-top:40px;
+  padding:20px 40px;
+  background:#c56b2b;
+  color:white;
+  font-size:22px;
+  border-radius:60px;
+  text-decoration:none;
+  transition:.3s;
+  box-shadow:0 15px 30px rgba(0,0,0,.2);
 }
 
 .button:hover{
-
-transform:translateY(-5px);
-
-background:#a5531d;
-
+  transform:translateY(-5px);
+  background:#a5531d;
 }
 
 .card{
-
-margin-top:70px;
-
-background:white;
-
-padding:50px;
-
-border-radius:25px;
-
-box-shadow:0 15px 40px rgba(0,0,0,.1);
-
+  margin-top:70px;
+  background:white;
+  padding:50px;
+  border-radius:25px;
+  box-shadow:0 15px 40px rgba(0,0,0,.1);
 }
 
 .quote{
-
-font-size:26px;
-
-font-family:'Playfair Display',serif;
-
-line-height:1.8;
-
+  font-size:26px;
+  font-family:'Playfair Display',serif;
+  line-height:1.8;
 }
 
 footer{
-
-margin-top:70px;
-
-padding-bottom:60px;
-
-font-size:18px;
-
+  margin-top:70px;
+  padding-bottom:60px;
+  font-size:18px;
 }
 
-.qr{
+.qr{ margin-top:40px; }
+.qr img{ width:220px; }
+.pumpkins{ font-size:45px; margin-top:30px; }
 
-margin-top:40px;
-
-}
-
-.qr img{
-
-width:220px;
-
-}
-
-.pumpkins{
-
-font-size:45px;
-
-margin-top:30px;
-
+/* Responsive tweaks */
+@media (max-width:480px){
+  .title{ font-size:40px; }
+  .heading{ font-size:32px; }
+  .subtitle{ font-size:18px; }
+  .button{ padding:14px 28px; font-size:18px; }
+  .card{ padding:30px; }
 }
 
 </style>
@@ -216,95 +131,44 @@ margin-top:30px;
 
 <body>
 
-<div class="leaf" style="left:5%;animation-duration:10s;">🍂</div>
+<div class="leaf" aria-hidden="true" style="left:5%;animation-duration:10s;">🍂</div>
+<div class="leaf" aria-hidden="true" style="left:18%;animation-duration:12s;">🍁</div>
+<div class="leaf" aria-hidden="true" style="left:35%;animation-duration:9s;">🍂</div>
+<div class="leaf" aria-hidden="true" style="left:52%;animation-duration:11s;">🍁</div>
+<div class="leaf" aria-hidden="true" style="left:70%;animation-duration:13s;">🍂</div>
+<div class="leaf" aria-hidden="true" style="left:90%;animation-duration:10s;">🍁</div>
 
-<div class="leaf" style="left:18%;animation-duration:12s;">🍁</div>
+<main class="container">
 
-<div class="leaf" style="left:35%;animation-duration:9s;">🍂</div>
+<div class="small">A LITTLE BLESSING IS ON THE WAY</div>
 
-<div class="leaf" style="left:52%;animation-duration:11s;">🍁</div>
+<div class="title">We're Thankful for</div>
 
-<div class="leaf" style="left:70%;animation-duration:13s;">🍂</div>
-
-<div class="leaf" style="left:90%;animation-duration:10s;">🍁</div>
-
-<div class="container">
-
-<div class="small">
-
-A LITTLE BLESSING IS ON THE WAY
-
-</div>
-
-<div class="title">
-
-We're Thankful for
-
-</div>
-
-<h1 class="heading">
-
-Our Little Holliday
-
-</h1>
+<h1 class="heading">Our Little Holliday</h1>
 
 <p class="subtitle">
-
 As we prepare to welcome Baby Holliday this fall, we'd love to share this special season with our family and friends.
-
 Your love, prayers, and support mean more than words can express.
-
 </p>
 
-<a class="button"
-
-href="https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L"
-
-target="_blank">
-
-🧡 View Our Amazon Baby Registry
-
-</a>
+<a class="button" href="https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L" target="_blank" rel="noopener noreferrer">🧡 View Our Amazon Baby Registry</a>
 
 <div class="card">
-
-<div class="quote">
-
-"Every little gift helps us prepare for our greatest blessing."
-
-</div>
-
-<div class="pumpkins">
-
-🎃 🍂 🧸 🍁
-
-</div>
-
-<div class="qr">
-
-<img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L">
-
-</div>
-
-<p style="margin-top:20px;font-size:18px;">
-
-Scan the QR Code to visit our registry anytime.
-
-</p>
-
+  <div class="quote">"Every little gift helps us prepare for our greatest blessing."</div>
+  <div class="pumpkins">🎃 🍂 🧸 🍁</div>
+  <div class="qr">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L" alt="QR code linking to our Amazon baby registry">
+  </div>
+  <p style="margin-top:20px;font-size:18px;">Scan the QR Code to visit our registry anytime.</p>
 </div>
 
 <footer>
-
-Thank you for celebrating
-
-<br><br>
-
-❤️ Our Little Holliday ❤️
-
+  Thank you for celebrating
+  <br><br>
+  ❤️ Our Little Holliday ❤️
 </footer>
 
-</div>
+</main>
 
 </body>
 
