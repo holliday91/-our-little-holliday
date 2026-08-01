@@ -8,6 +8,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<meta name="description" content="Our Little Holliday — baby registry and celebration page.">
+
 <title>Our Little Holliday</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet">
@@ -113,7 +115,7 @@ footer{
 }
 
 .qr{ margin-top:40px; }
-.qr img{ width:220px; }
+.qr img{ width:250px; max-width:80vw; height:auto; }
 .pumpkins{ font-size:45px; margin-top:30px; }
 
 /* Responsive tweaks */
@@ -157,7 +159,14 @@ Your love, prayers, and support mean more than words can express.
   <div class="quote">"Every little gift helps us prepare for our greatest blessing."</div>
   <div class="pumpkins">🎃 🍂 🧸 🍁</div>
   <div class="qr">
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L" alt="QR code linking to our Amazon baby registry">
+    <!-- Local SVG placeholder image. If you want a scannable QR, upload a PNG/JPEG and I will replace this. -->
+    <img src="assets/registry-qr.svg" alt="QR code linking to our Amazon baby registry (https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L)" role="img">
+    <noscript>
+      <!-- If JavaScript is disabled, show an external, server-generated QR code (scannable) and a direct link -->
+      <p style="margin-top:12px;">If the QR image does not display, open this link:</p>
+      <p><a href="https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L" target="_blank" rel="noopener noreferrer">https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L</a></p>
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L" alt="External QR code linking to the Amazon registry">
+    </noscript>
   </div>
   <p style="margin-top:20px;font-size:18px;">Scan the QR Code to visit our registry anytime.</p>
 </div>
