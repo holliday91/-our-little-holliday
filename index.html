@@ -153,16 +153,24 @@ As we prepare to welcome Baby Holliday this fall, we'd love to share this specia
 Your love, prayers, and support mean more than words can express.
 </p>
 
-<a class="button" href="https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L" target="_blank" rel="noopener noreferrer">🧡 View Our Amazon Baby Registry</a>
+<a class="button" href="https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L" target="_blank" rel="noopener noreferrer" aria-label="Open our Amazon baby registry (opens in a new tab)">🧡 View Our Amazon Baby Registry</a>
 
 <div class="card">
   <div class="quote">"Every little gift helps us prepare for our greatest blessing."</div>
   <div class="pumpkins">🎃 🍂 🧸 🍁</div>
   <div class="qr">
-    <!-- Make the QR image clickable: wrap it in a link to the registry -->
-    <a href="https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L" target="_blank" rel="noopener noreferrer">
-      <img src="assets/registry-qr.svg" alt="QR code linking to our Amazon baby registry (https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L)" role="img">
+    <!-- Use a scannable QR image from a trusted API so visitors can scan immediately -->
+    <a href="https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L" target="_blank" rel="noopener noreferrer" aria-label="Open our Amazon baby registry (opens in a new tab)">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=500x500&data=https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L" alt="QR linking to our Amazon baby registry" role="img">
     </a>
+
+    <!-- Visible textual link for users who cannot scan the QR code or use screen readers -->
+    <p style="margin-top:12px; font-size:16px;">
+      Or open the registry directly:
+      <br>
+      <a href="https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L" target="_blank" rel="noopener noreferrer">https://www.amazon.com/baby-reg/joshua-holiday-october-2026-martinez/13EXU47YWX90L</a>
+    </p>
+
     <noscript>
       <!-- If JavaScript is disabled, show an external, server-generated QR code (scannable) and a direct link -->
       <p style="margin-top:12px;">If the QR image does not display, open this link:</p>
